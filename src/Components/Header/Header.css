@@ -1,0 +1,54 @@
+.img {
+  width: 237px;
+  height: 180px;
+  position: absolute;
+  transform: translate(-117px, -108px);
+}
+.shadow {
+  position: absolute;
+  transform: translate(-117px, 5px);
+}
+.imgDesktop {
+  display: none;
+}
+.boxDesktop {
+  display: none;
+}
+.shadowDesktop {
+  display: none;
+}
+@media (width >= 1200px) {
+  .img {
+    display: none;
+  }
+  .shadow {
+    display: none;
+  }
+  .imgDesktop {
+    display: flex;
+    position: absolute;
+    transform: translate(-70px, 102px);
+    z-index: 1;
+  }
+  .shadowDesktop {
+    display: flex;
+    position: absolute;
+    transform: translate(-570px, -264px);
+  }
+  .boxDesktop {
+    display: flex;
+    position: absolute;
+    transform: translate(-1033px, 238px);
+    z-index: 10;
+  }
+  .desktopImgDiv {
+    position: absolute;
+    z-index: 10;
+    width: 1039px;
+    height: 557px;
+    transform: translate(-944px, 0px);
+    display: flex;
+    border-radius: 23px;
+    overflow: hidden;
+  }
+}
