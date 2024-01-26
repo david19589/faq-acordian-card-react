@@ -46,8 +46,8 @@ const Texts = () => {
       <h1 className="FAQ">FAQ</h1>
       {Array.map((item) => {
         return (
-          <div key={item.id} onClick={() => clickHandler(item.id)}>
-            <p className={`${Clicked === item.id ? "questionActive" : "question"}`}>{item.question}</p>
+          <div key={item.id}>
+            <p onClick={() => clickHandler(item.id)} className={`${Clicked === item.id ? "questionActive" : "question"}`}>{item.question}</p>
             {Clicked === item.id ? (
               <img className="arrowUp" src={ArrowUp}></img>
             ) : (
